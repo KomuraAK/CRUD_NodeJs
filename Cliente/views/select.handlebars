@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Endereço</td>
+        <td>Celular</td>
+        <td>Email</td>
+        <td>Senha</td>
+        <td>Data-Nascimento</td>
+        <td>RG</td>
+        <td>CPF</td>
+        <td>Ações</td>
+    </tr>
+
+    {{#data}}
+        <tr>
+            <td>{{cliente_id}}</td>
+            <td>{{nome_cliente}}</td>
+            <td>{{endereco_cliente}}</td>
+            <td>{{cel_cliente}}</td>
+            <td>{{email_cliente}}</td>
+            <td>{{senha_cliente}}</td>
+            <td>{{datanasc_cliente}}</td>
+            <td>{{rg_cliente}}</td>
+            <td>{{cpf_cliente}}</td>
+            <td>
+                <a href='update/{{cliente_id}}' class='update'><img src="/img/icons8-edit-16.png"></a>
+                <a href='deletar/{{cliente_id}}' class="deletar"><img src='/img/icons8-delete-16.png'></a>
+            </td>
+        </tr>
+    {{/data}}
+</table>
